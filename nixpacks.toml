@@ -1,0 +1,8 @@
+[phases.setup]
+aptPkgs = ["..."] # Esto ayuda a que detecte .NET
+
+[phases.build]
+cmds = ["dotnet publish Inventario/Inventario.csproj -c Release -o out"]
+
+[phases.start]
+cmd = "dotnet out/Inventario.dll"
